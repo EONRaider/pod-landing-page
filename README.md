@@ -1,7 +1,7 @@
 # Frontend Mentor - Pod Request Access Landing Page solution
 
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Havoc-Solutions/pod-landing-page?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/Havoc-Solutions/pod-landing-page)
-![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feonraider-pod-landing-page.netlify.app%2F)
+![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feon-pod-landing-page.netlify.app%2F)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
 This is a solution
