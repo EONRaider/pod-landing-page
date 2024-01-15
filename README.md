@@ -26,7 +26,7 @@ improve your coding skills by building realistic projects.
 ### Links
 
 - [Check the Live Site](https://eon-pod-landing-page.netlify.app/)
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/html5scssjs-pod-request-access-landing-page-9KVagMTDKF)
 
 ### Screenshot
 
