@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <title></title>
-  </head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+        <title></title>
+    </head>
 
-  <body>
-    <main>
-      <h1>Project template for Frontend Mentor challenges</h1>
-    </main>
+    <body class="flex-row bg-primary">
+        <main class="flex-column">
+            <header class="logo-wrapper">
+                <img class="logo" src="images/logo.svg" alt="Pod logo">
+            </header>
 
-    <script src="js/script.js"></script>
-  </body>
+            <section class="hero | flow">
+                <article class="hero-article | flow">
+                    <h1 class="hero-article__title | clr-primary fnt-thin">Publish your podcasts <span
+                            class="clr-highlight">everywhere.</span></h1>
+                    <p class="hero-article__text | clr-secondary fnt-thin">Upload your audio to Pod with a single click.
+                        We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+                        more!</p>
+                </article>
+
+                <div class="hero-inner-wrapper | flex-column">
+                    <div class="email-input">
+                        <input class="email-input__field | bg-secondary clr-highlight fnt-bold"
+                               type="email"
+                               aria-label="email"
+                               autocomplete="email"
+                               placeholder="Email address"
+                               name="email-input__field">
+                        <button class="email-input__button | bg-highlight fnt-bold">Request Access</button>
+                    </div>
+                    <div class="icons | flex-row">
+                        <img class="icons__spotify" src="images/spotify.svg" alt="Spotify Podcasts">
+                        <img class="icons__apple" src="images/apple-podcast.svg" alt="Apple Podcasts">
+                        <img class="icons__google" src="images/google-podcasts.svg" alt="Google Podcasts">
+                        <img class="icons__pocket" src="images/pocket-casts.svg" alt="Pocket Casts">
+                    </div>
+                </div>
+            </section>
+
+            <img class="bg-pattern-dots" src="images/bg-pattern-dots.svg" alt="Dots background pattern">
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>

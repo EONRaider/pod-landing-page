@@ -1,37 +1,373 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin: 0;
+    margin: 0;
 }
 
 ul[role=list],
 ol[role=list] {
-  list-style: none;
+    list-style: none;
 }
 
 img, picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 input, button,
 textarea, select {
-  font: inherit;
+    font: inherit;
+}
+
+@font-face {
+    font-family: Chivo;
+    src: url("../fonts/Chivo-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Chivo;
+    src: url("../fonts/Chivo-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {
+    font-family: Chivo, sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    min-height: 640px;
+    background-image: url("../images/desktop/image-host.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    max-width: 723px;
+    --flow-space: 40px;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.flex-row, .flex-column {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.bg-primary {
+    background-color: #121725;
+}
+
+.bg-secondary {
+    background-color: #2C344B;
+}
+
+.bg-highlight {
+    background-color: #54E6AF;
+}
+
+.clr-primary {
+    color: #54E6AF;
+}
+
+.clr-secondary {
+    color: #C2CBE5;
+}
+
+.clr-highlight {
+    color: #FFFFFF;
+}
+
+.fnt-thin {
+    font-weight: 100;
+}
+
+.fnt-bold {
+    font-weight: 700;
+}
+
+.easy-transition, .email-input:focus .email-input__field::placeholder,
+.email-input:hover .email-input__field::placeholder, body * {
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-wrapper {
+    width: 135px;
+    height: 56px;
+    position: relative;
+}
+
+.hero-article {
+    --flow-space: 24px;
+}
+
+.hero-article__title {
+    margin-top: 88px;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+}
+
+.hero-article__text {
+    max-width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero-inner-wrapper {
+    gap: 64px;
+}
+
+.email-input {
+    width: min(427px, 100%);
+    height: 56px;
+    position: relative;
+}
+
+.email-input__field {
+    width: 100%;
+    height: min(56px, 100%);
+    padding-left: 32px;
+    border: none;
+    border-radius: 28px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.email-input__field::placeholder {
+    color: #9599A5;
+}
+
+.email-input__button {
+    width: 162px;
+    height: 46px;
+    border: none;
+    border-radius: 28px;
+    box-shadow: 0 2px 4px 0 rgba(84, 230, 175, 0.14);
+    color: #121725;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.icons {
+    width: min(536px, 100%);
+    height: 29px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons__spotify {
+    width: 96px;
+    height: 29px;
+}
+
+.icons__apple {
+    width: 78px;
+    height: 29px;
+}
+
+.icons__google {
+    width: 125px;
+    height: 18px;
+}
+
+.icons__pocket {
+    width: 129px;
+    height: 26px;
+}
+
+.email-input__field:focus {
+    outline: 1px solid #9599A5;
+}
+
+.email-input__button:hover {
+    cursor: pointer;
+    background-color: #B3FFE2;
+}
+
+@media only screen and (width >= 1024px) {
+    main {
+        justify-content: space-between;
+        flex: 0 1 1275px;
+        margin-inline: 40px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 100%;
+        top: -28px;
+        left: 0;
+    }
+
+    .bg-pattern-dots {
+        position: absolute;
+        right: 0;
+        bottom: -52px;
+    }
+}
+
+@media only screen and (768px <= width < 1024px) {
+    body {
+        align-items: start;
+    }
+
+    body .email-input__button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    main {
+        min-height: 767px;
+        justify-content: space-between;
+        flex: 0 1 768px;
+        margin-left: 39px;
+        background-image: url("../images/tablet/image-host.jpg");
+        background-position: top right;
+    }
+
+    .logo-wrapper {
+        margin-top: 50px;
+    }
+
+    .hero {
+        max-width: 635px;
+    }
+
+    .hero-article__title {
+        margin-top: 93px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .bg-pattern-dots {
+        position: absolute;
+        left: -9px;
+        bottom: -257px;
+    }
+}
+
+@media only screen and (width >= 768px) {
+    body .email-input__button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .hero {
+        background-color: #121725;
+    }
+
+    .email-input:hover .email-input__field::placeholder {
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (width < 768px) {
+    main {
+        width: 375px;
+        min-height: 667px;
+        padding: 62px 24px 94px;
+        justify-content: start;
+        align-items: center;
+        background-image: url("../images/mobile/image-host.png");
+        background-position: top right;
+    }
+
+    .hero {
+        max-width: 100%;
+        text-align: center;
+        --flow-space: 33px;
+    }
+
+    .hero-article {
+        --flow-space: 16px;
+    }
+
+    .hero-article__title {
+        margin-top: 57px;
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .hero-article__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .hero-inner-wrapper {
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+
+    .email-input {
+        height: 46px;
+    }
+
+    .email-input__button {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .email-input__field:hover::placeholder {
+        color: #FFFFFF;
+    }
+
+    .icons {
+        height: 17px;
+    }
+
+    .icons__spotify {
+        width: 56px;
+        height: 17px;
+    }
+
+    .icons__apple {
+        width: 45px;
+        height: 17px;
+    }
+
+    .icons__google {
+        width: 73px;
+        height: 11px;
+    }
+
+    .icons__pocket {
+        width: 77px;
+        height: 15px;
+    }
+
+    .bg-pattern-dots {
+        display: none;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
