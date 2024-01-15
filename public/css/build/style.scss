@@ -184,6 +184,14 @@ body * {
   }
 }
 
+.error-message {
+  display: none;
+  color: var.$clr-red-400;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 // DESKTOP VERSION
 @media only screen and (width >= 1024px) {
   main {
@@ -257,6 +265,10 @@ body * {
     // Added due to the small border the embedded button acquired
     // within email-input
     color: var.$clr-white-800;
+  }
+
+  .error-message {
+    padding-left: 32px;
   }
 }
 
