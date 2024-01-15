@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "pod-request-acess-landing-page",
   "version": "1.0.0",
-  "description": "A brief description of project",
+  "description": "A landing page with a sign-up feature for Pod",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EONRaider/Project.git"
+    "url": "git+https://github.com/Havoc-Solutions/pod-landing-page.git"
   },
   "author": "EONRaider",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EONRaider/Project/issues"
+    "url": "https://github.com/Havoc-Solutions/pod-landing-page/issues"
   },
-  "homepage": "https://github.com/EONRaider/Project#readme",
+  "homepage": "https://github.com/Havoc-Solutions/pod-landing-page#readme",
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
