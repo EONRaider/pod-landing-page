@@ -30,7 +30,7 @@ improve your coding skills by building realistic projects.
 
 ### Screenshot
 
-![Pod-Request-Access-Landing-Page](https://github.com/Havoc-Solutions/pod-landing-page/assets/15611424/25190e02-14ae-4f5d-b69a-9d368f8b5764)
+![Pod-Request-Access-Landing-Page](https://github.com/Havoc-Solutions/pod-landing-page/assets/15611424/5bd9409a-5c34-460d-b54f-af710bf284ab)
 
 ## Try it out!
 
