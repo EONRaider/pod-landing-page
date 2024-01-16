@@ -36,13 +36,13 @@ textarea, select {
 
 @font-face {
   font-family: Chivo;
-  src: url("../fonts/Chivo-Thin.ttf");
+  src: url("../../fonts/Chivo-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: Chivo;
-  src: url("../fonts/Chivo-Bold.ttf");
+  src: url("../../fonts/Chivo-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
@@ -58,7 +58,7 @@ body {
 main {
   position: relative;
   min-height: 640px;
-  background-image: url("../images/desktop/image-host.jpg");
+  background-image: url("../../images/desktop/image-host.jpg");
   background-position: center right;
   background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ main {
     justify-content: space-between;
     flex: 0 1 768px;
     margin-left: 39px;
-    background-image: url("../images/tablet/image-host.jpg");
+    background-image: url("../../images/tablet/image-host.jpg");
     background-position: top right;
   }
   .logo-wrapper {
@@ -294,7 +294,7 @@ main {
     padding: 62px 24px 94px;
     justify-content: start;
     align-items: center;
-    background-image: url("../images/mobile/image-host.png");
+    background-image: url("../../images/mobile/image-host.png");
     background-position: top right;
   }
   .hero {

@@ -2,8 +2,8 @@
 @use 'utils' as utils;
 @use 'variables' as var;
 
-@include utils.setFont(Chivo, url("../fonts/Chivo-Thin.ttf"), 100);
-@include utils.setFont(Chivo, url("../fonts/Chivo-Bold.ttf"), 700);
+@include utils.setFont(Chivo, url("../../fonts/Chivo-Thin.ttf"), 100);
+@include utils.setFont(Chivo, url("../../fonts/Chivo-Bold.ttf"), 700);
 
 :root {
   font-family: Chivo, sans-serif;
@@ -18,7 +18,7 @@ body {
 main {
   position: relative;
   min-height: 640px;
-  background-image: url("../images/desktop/image-host.jpg");
+  background-image: url("../../images/desktop/image-host.jpg");
   background-position: center right;
   background-repeat: no-repeat;
 }
@@ -226,7 +226,7 @@ body * {
     justify-content: space-between;
     flex: 0 1 768px;
     margin-left: 39px;
-    background-image: url("../images/tablet/image-host.jpg");
+    background-image: url("../../images/tablet/image-host.jpg");
     background-position: top right;
   }
 
@@ -280,7 +280,7 @@ body * {
     padding: 62px 24px 94px;
     justify-content: start;
     align-items: center;
-    background-image: url("../images/mobile/image-host.png");
+    background-image: url("../../images/mobile/image-host.png");
     background-position: top right;
   }
 
